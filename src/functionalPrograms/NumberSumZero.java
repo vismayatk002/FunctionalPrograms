@@ -6,13 +6,11 @@ public class NumberSumZero {
 	
 	public static void findTriples(int[] arr){
 		
-		int sum;
 		for(int i=0; i<arr.length; i++) {
-			for(int j=0; j<arr.length; j++) {
-				for(int k=0; k<arr.length; k++) {
-					sum = arr[i] + arr[j] + arr[k];
-					if(sum == 0){
-						System.out.print( "\n" + i + " " + j + " " + k);
+			for(int j=i+1; j<arr.length; j++) {
+				for(int k=j+1; k<arr.length; k++) {
+					if(arr[i] + arr[j] + arr[k] == 0){
+						System.out.println("Numbers :" + arr[i] + " ," + arr[j] + " ," + arr[k]);
 					}
 				}
 			}

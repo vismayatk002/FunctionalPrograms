@@ -1,6 +1,6 @@
 package functionalPrograms;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class WindChill {
 
@@ -18,13 +18,15 @@ public class WindChill {
 	public static void main(String[] args) {
 		
 		//convert command line argument to integer
-		//int N =Integer.parseInt(args[0]);
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the temperature(in faharenheit)below 50 : ");
-		double t = sc.nextInt();
-		System.out.print("Enter the wind speed(inmiles per hour)between 3 & 120 : ");
-		double v = sc.nextInt();
+		double t =Integer.parseInt(args[0]);
+		double v =Integer.parseInt(args[1]);
+		//for testing
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter the temperature(in faharenheit) : ");
+//		double t = sc.nextInt();
+//		System.out.print("Enter the wind speed(inmiles per hour) : ");
+//		double v = sc.nextInt();
 		windChillCalutate(t , v);
-		sc.close();
+//		sc.close();
 	}
 }

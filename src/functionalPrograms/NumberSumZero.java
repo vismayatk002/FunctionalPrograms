@@ -6,16 +6,28 @@ public class NumberSumZero {
 	
 	public static void findTriples(int[] arr){
 		
+		int triplesCount = 0; 
+		
 		for(int i=0; i<arr.length; i++) {
 			for(int j=i+1; j<arr.length; j++) {
 				for(int k=j+1; k<arr.length; k++) {
+					// Check the sum of combination is zero
 					if(arr[i] + arr[j] + arr[k] == 0){
-						System.out.println("Numbers :" + arr[i] + " ," + arr[j] + " ," + arr[k]);
+						// Condition to print the line only once
+						if(triplesCount == 0) {
+							System.out.println("Triples available in array");
+						}
+						System.out.println("(" + i + " ," + j + " ," + k+ ")");
+						triplesCount++;
 					}
 				}
 			}
 		}
-		
+		if(triplesCount == 0) {
+			System.out.println("Array doesn't have triples");
+		}else {
+			System.out.println("Triples count : " + triplesCount);
+		}
 	}
 	public static void main(String[] args) {
 	

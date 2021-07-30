@@ -1,6 +1,6 @@
 package functionalPrograms;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Distance {
 	
@@ -11,14 +11,15 @@ public class Distance {
 	}
 	public static void main(String[] args) {
 		
-//		int x = Integer.parseInt(args[0]);
-//		int y = Integer.parseInt(args[1]);
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter x-coodinate : ");
-		double x = sc.nextDouble();
-		System.out.print("Enter y-coodinate : ");
-		double y = sc.nextDouble();
+		double x = Integer.parseInt(args[0]);
+		double y = Integer.parseInt(args[1]);
+		//for testing
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter x-coodinate : ");
+//		double x = sc.nextDouble();
+//		System.out.print("Enter y-coodinate : ");
+//		double y = sc.nextDouble();
 		getDistance(x , y);
-		sc.close();
+//		sc.close();
 	}
 }
